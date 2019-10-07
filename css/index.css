@@ -1,3 +1,235 @@
-body {
-	background-color: tomato;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+html{
+    --background: rgb(255, 255, 255);
+	--foreground: rgb(0, 0, 0);
+	--secondary: rgb(42, 93, 202);
+ 
+	}
+	
+body{
+	background-color: #ffffff; 
+	color: var(--foreground);
+	font-family: 'Raleway', sans-serif;
+}
+
+nav{
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	background-color: #264c7e;
+}
+
+.navlist{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.navlist a{
+padding: 20px;
+text-align: right;
+text-decoration: none;
+color: #ffffff;
+font-size: 10px;
+letter-spacing: 2px;
+}
+
+.burgermenu div{
+width: 20px;
+height: 1px;
+background-color: #ffffff;
+margin: 5px;
+
+}
+
+.burgermenu{
+	text-align: right;
+align-items: right;
+}
+
+.logo {
+	height: 50px;
+}
+
+
+
+.applybutton {
+	width: 4em;
+	height: 4em;
+	background-color: #71d0f6;
+	color: var(--on-secondary);
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 1em rgba(0,0,0,0.4);
+	text-align: center;
+	line-height: 1em;
+	transition: all 0.3s;
+	cursor: pointer;
+  
+	position: fixed;
+	top: 7em;
+	right: 1em;
+	z-index: 1;
+}
+.interaction{
+
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 300;
+	text-align: center;
+	
+
+}
+.design{
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+
+.heading{
+	display: flex;
+	padding: 1em 0 0 0;
+	letter-spacing: 8px;
+	margin-left:10px ;
+	margin-right:10px;
+	margin-top: 5px; 
+}
+	
+h2{
+	font-size: 17px;
+	line-height: 2em;
+	letter-spacing: 8px;
+	padding: 10px 10px 10px 10px;
+
+
+}
+.underline {
+	border-bottom: 5px solid  #ffffff;
+  }
+.program{
+	background: #264c7e;
+	color: white;
+
+}
+.image{
+	background-image: url(/img/1.jpg);
+	background-size:  auto 80%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-color: black 0.1;
+}
+
+
+.careers{
+	background: #264c7e;
+	color: white;
+}
+.careerlist{
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	margin-left: 30px;
+	list-style-type: circle;
+}
+
+p{
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	padding: 10px 10px 10px 10px;
+	text-align: justify;
+}
+h4 {
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	padding: 10px 10px 10px 10px;
+	text-align: right;
+}
+a{
+	text-decoration: none;
+	color:  #264c7e;
+}
+h5 a{
+	text-decoration: none;
+	color: rgb(252, 252, 252);	
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	padding: 10px 10px 10px 10px;
+	text-align: right;
+
+}
+
+.line4{
+	width: 55%;
+	height: 1px;
+	background-color: #000000;
+	margin: 5px;
+	margin-left: 45% 
+}
+dt, dd {
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+
+
+
+  .topics :nth-child(4n+1), .topics :nth-child(4n+2) {
+	background-color: rgb(138, 207, 219);
+  }
+@media screen and (min-width: 900px) {
+	.interaction-design {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+
+@media screen and (min-width: 900px) {
+	.searchbar {
+		display: none;
+	}
+}
+@media screen and (min-width: 900px) {
+	.burgermenu {
+		display: none;
+	}
+}
+@media screen and (min-width: 900px) {
+	.logo{
+		height: 70px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	body{
+		overflow-x: hidden;
+	}
+	.navlist{
+		position: absolute;
+		right: 5px;
+		height: 30vh;
+		top:7vh;
+		background-color: rgba(90, 88, 88, 0.747);
+		display: flex;
+		flex-direction: column;
+		align-items: right;
+		width: 70%;
+		text-align: right;
+		transform: translateX(100%);
+	}
+	.navlist li{
+		opacity: 0;
+	}
+	.burgermenu{
+		display: block;
+	}
+}
+@media screen and (max-width: 900px) {
+	.bottomnav{
+		display: none;
+	}
 }
